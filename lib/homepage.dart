@@ -60,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child:Column(
           children: [
             Container(
+              margin: const EdgeInsets.only(left: 40),
               height: 200,
               width: 500,
               child: Row(
