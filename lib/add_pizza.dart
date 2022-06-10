@@ -35,7 +35,7 @@ class _AddPizzaState extends State<AddPizza> {
                   child: Row(
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(left: 40, right: 20),
+                        margin: const EdgeInsets.only(left: 20, right: 20),
                         color: Colors.red[100],
                         child:IconButton(
                           icon: Icon(Icons.arrow_back_ios_new),
@@ -100,11 +100,13 @@ class _AddPizzaState extends State<AddPizza> {
                                           flex:50,
                                           child: Container(
                                             alignment: Alignment.topCenter,
+                                            margin: const EdgeInsets.only(right: 30),
                                             child: TextField(
                                               controller: nameController,
                                               maxLines: 1,
                                               decoration: InputDecoration(
                                                 border: OutlineInputBorder(),
+
                                               ),
 
                                               style: TextStyle(fontSize: 25),
@@ -134,6 +136,7 @@ class _AddPizzaState extends State<AddPizza> {
                                           flex:50,
                                           child: Container(
                                             alignment: Alignment.topCenter,
+                                            margin: const EdgeInsets.only(right: 30),
                                             child: TextField(
                                               controller: priceController,
                                               keyboardType: TextInputType.number,
@@ -176,7 +179,7 @@ class _AddPizzaState extends State<AddPizza> {
               child: Container(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  height: 100,
+                  height: 70,
                   width: 1000,
                   color: Colors.red,
                   child: OutlinedButton(
